@@ -64,13 +64,6 @@ const FooterStyled = styled.div`
 const Footer = () => {
   return (
     <FooterStyled>
-      <a
-        href="https://github.com/Funmi7/portfolio"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <p>Designed and built by Funmilayo Talabi</p>
-      </a>
       <p className="icons">
         Icons used got from
         <a

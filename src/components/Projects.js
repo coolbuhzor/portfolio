@@ -9,7 +9,6 @@ import githubfinda from "../img/githubfinda.png";
 const ProjectStyled = styled.div`
   // height: 100vh;
   padding: 15rem 0;
-  border: 1px solid red;
 
   @media ${devices.large} {
     height: auto;
@@ -210,7 +209,8 @@ const projects = [
   },
   {
     title: "Nimdee",
-    description: "Nimdee is a ",
+    description:
+      "Nimdee is a learning platform that helps children parents and teachers",
     languages: ["React", "Redux", "PHP"],
     webLink: "https://nimdee.com/",
     githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
@@ -220,7 +220,7 @@ const projects = [
   {
     title: "Github Finder",
     description:
-      "Github Finder is an application that allows you to search for github users and their details. Users don't need to signup/login t use this application. ",
+      "Github Finder is an application that allows you to search for github users and their details. Users don't need to signup/login to use this application. ",
     languages: ["React", "context api", "Styled Components"],
     webLink: "https://www.dev-coach.com/",
     githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
