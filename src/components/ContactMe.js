@@ -3,8 +3,8 @@ import styled from "styled-components";
 import devices from "../utils/devices";
 
 const ContactStyled = styled.div`
-  margin-top: 370vh;
-  height: 90vh;
+  // margin-top: 370vh;
+  height: 70vh;
   padding-top: 15rem;
   position: relative;
 
@@ -104,7 +104,7 @@ const ContactMe = () => {
         <button>Connect With Me</button>
       </a> */}
       <div>
-        <a href="mailto:talabifunmilayo@gmail.com">
+        <a href="mailto:coolbuhzor@gmail.com">
           <svg
             id="Capa_1"
             enable-background="new 0 0 479.058 479.058"
@@ -117,7 +117,7 @@ const ContactMe = () => {
           </svg>
         </a>
         <a
-          href="https://github.com/Funmi7"
+          href="https://github.com/coolbuhzor"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -131,7 +131,7 @@ const ContactMe = () => {
           </svg>
         </a>
         <a
-          href="https://www.linkedin.com/in/funmilayo-talabi/"
+          href="http://linkedin.com/in/chibuzor-okafor-023677107"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -145,7 +145,7 @@ const ContactMe = () => {
           </svg>
         </a>
         <a
-          href="https://twitter.com/fun_tee7"
+          href="https://twitter.com/coolbuhzor"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -4,10 +4,12 @@ import styled from "styled-components";
 import devices from "../utils/devices";
 import credoImg from "../img/credo-img.png";
 import nimdeeImg from "../img/nimdee.png";
+import githubfinda from "../img/githubfinda.png";
 
 const ProjectStyled = styled.div`
-  height: 100vh;
-  padding-top: 15rem;
+  // height: 100vh;
+  padding: 15rem 0;
+  border: 1px solid red;
 
   @media ${devices.large} {
     height: auto;
@@ -208,31 +210,21 @@ const projects = [
   },
   {
     title: "Nimdee",
-    description:
-      "Picture gallery is a web application that allows you upload random pictures on the web for you and others to see. Users have to signup/login to use the feature",
-    languages: ["React", "Redux", "Node", "Express", "MongoDb"],
-    webLink: "https://pictures-eta.vercel.app",
-    githubLink: "https://github.com/Funmi7/work-in",
+    description: "Nimdee is a ",
+    languages: ["React", "Redux", "PHP"],
+    webLink: "https://nimdee.com/",
+    githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
     image: nimdeeImg,
     altText: "Nimdee project screenshot",
   },
   {
-    title: "DevCoach",
+    title: "Github Finder",
     description:
-      "DevCoach is a web application that helps developers practice interviews with experienced coaches. Includes sign up/ Login for both students or coaches, list of coaches, dashboard for schedule appointments, and visualisation for feedbacks. Also includes video chat, chat and code editor.",
-    languages: [
-      "React",
-      "Redux",
-      "Node",
-      "Express",
-      "postgresql",
-      "Material UI",
-      "Ant Design",
-      "Styled Components",
-    ],
+      "Github Finder is an application that allows you to search for github users and their details. Users don't need to signup/login t use this application. ",
+    languages: ["React", "context api", "Styled Components"],
     webLink: "https://www.dev-coach.com/",
     githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
-    image: nimdeeImg,
+    image: githubfinda,
     altText: "devCoach project screenshot",
   },
 ];
