@@ -5,6 +5,7 @@ import devices from "../utils/devices";
 import credoImg from "../img/credo-img.png";
 import nimdeeImg from "../img/nimdee.png";
 import githubfinda from "../img/githubfinda.png";
+import unical from "../img/unical.png";
 
 const ProjectStyled = styled.div`
   // height: 100vh;
@@ -225,7 +226,17 @@ const projects = [
     webLink: "https://www.dev-coach.com/",
     githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
     image: githubfinda,
-    altText: "devCoach project screenshot",
+    altText: "Github finda project screenshot",
+  },
+  {
+    title: "Unical Portal",
+    description:
+      "Unical Portal  is an application that is under development. Unical Portal is an application that's suppose to help students of the University of Calabar pay fees, book accommodation, check results and make school life easier.",
+    languages: ["React", "Redux", "Styled Components", "Node js"],
+    webLink: "https://www.unical.nugitech.com/",
+    githubLink: "https://github.com/nugitech/unical-frontend",
+    image: unical,
+    altText: "Unical project screenshot",
   },
 ];
 

@@ -9,6 +9,7 @@ import reactIcon from "../img/reactIcon.svg";
 import gitIcon from "../img/gitIcon.svg";
 import devices from "../utils/devices";
 import Zoom from "react-reveal/Zoom";
+import bootstrap from "../img/bootstrapIcon.svg";
 
 const SkillStyled = styled.div`
   height: 100vh;
@@ -73,7 +74,7 @@ const skillsA = [
 ];
 const skillsB = [
   { icon: nodeIcon, altText: "node icon" },
-  // { icon: pythonIcon, altText: "python icon" },
+  { icon: bootstrap, altText: "Bootstrap icon" },
   { icon: gitIcon, altText: "git icon" },
 ];
 

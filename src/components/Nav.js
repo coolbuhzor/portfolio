@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import devices from "../utils/devices";
-import myLogo from "../img/my-logo.png";
+// import myLogo from "../img/my-logo.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavStyled = styled.div`
@@ -35,12 +35,14 @@ const NavStyled = styled.div`
     background: #0b0a1d;
     width: 13rem;
     height: 13rem;
-    margin-top:3.5rem;
+    // margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
 
     img {
       max-width: 100%;
       max-height: 100%;
-      background: #0b0a1d
+      background: #0b0a1d;
     }
   }
 
@@ -74,13 +76,28 @@ const NavStyled = styled.div`
     background: #0b0a1d;
   }
 `;
+const Logo = styled.div`
+  background: #53b2ac;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+`;
 
 function Navigation() {
   return (
     <NavStyled>
       <div className="logoDiv">
         <AnchorLink href="#home" className="linkStyle">
-          <img src={myLogo} alt="my logo"/>
+          <Logo>
+            {/* <p>Lorem, ipsum.</p> */}
+            Chibuzor
+          </Logo>
+          {/* <img src={myLogo} alt="my logo"/> */}
         </AnchorLink>
       </div>
       <div className="linkDiv">
