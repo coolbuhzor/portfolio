@@ -211,7 +211,7 @@ const projects = [
   {
     title: "Nimdee",
     description:
-      "Nimdee is a learning platform that helps children parents and teachers",
+      "Nimdee is a learning platform that helps parents and teachers with the resources and materials to teach kids in a fun way.",
     languages: ["React", "Redux", "PHP"],
     webLink: "https://nimdee.com/",
     githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
