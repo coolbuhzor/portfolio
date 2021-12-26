@@ -102,31 +102,21 @@ const AboutMe = () => {
           </div>
         </div>
         <p>
-          {/* Hi! I am Funmi, a passionate and dedicated Software Engineer from
-          Nigeria who enjoys building web applications. */}
           Hi! I am Chibuzor, a passionate, creative and dedicated Software
           Engineer with a track record of developing unique user experiences
-          that drives user interaction.
+          that drive user interaction.
           <br></br>
-          <br></br>
-          {/* Through my experience at Lambda School, I've acquired the skills and
-          knowledge of modern web technologies needed for developing websites
-          that look good, feel fantastic and function optimally with efficient
-          and modern backend. */}
-          I love solving problems with codes and also love building things that
+          <br></br>I love solving problems with codes and building things that
           live on the internet. I develop exceptional websites and web apps that
           provide cool and pixel-perfect user interfaces.
           <br></br>
           <br></br>
           All this is to let you know that I'm pretty awesome at what I do. Feel
           free to reach out to me.
-          {/* When I am not programming, I am most likely reading a novel, listening
-          to pop music, seeing a movie, sight seeing or hanging out with friends
-          and family. */}
           <br></br>
           <br></br>
           When I am not Coding, I am most likely watching football, listening to
-          music, seeing a movie, Travelling or hanging out with friends and
+          music, seeing a movie, travelling or hanging out with friends and
           family.
         </p>
       </div>
