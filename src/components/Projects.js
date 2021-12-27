@@ -201,7 +201,7 @@ const projects = [
   {
     title: "Credo",
     description:
-      "Credo is a fintech application that is in development which helps to run businesses as smoothly as possible. Credo helps with selling of your products, payments and posting directly to you social media accounts.",
+      "Currently, in development, Credo is a fintech application that helps businesses run as smoothly as possible. Credo helps process payments, sell products, and post directly on social media accounts.",
     languages: ["React", "Redux", "Node", "Styled Components", "Bootstrap"],
     webLink: "https://credo.nugitech.com/",
     githubLink: "https://github.com/nugitech/credo-frontend",
@@ -211,7 +211,7 @@ const projects = [
   {
     title: "Nimdee",
     description:
-      "Nimdee is a learning platform that helps parents and teachers with the resources and materials to teach kids in a fun way.",
+      "Nimdee is a learning platform that provides parents and teachers with resources and materials to teach kids in a fun and engaging way",
     languages: ["React", "Redux", "PHP"],
     webLink: "https://nimdee.com/",
     githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
@@ -221,9 +221,9 @@ const projects = [
   {
     title: "Github Finder",
     description:
-      "Github Finder is an application that allows you to search for github users and their details. Users don't need to signup/login to use this application. ",
+      "GitHub Finder is an application that allows you to search for Github users, their details, and their contributions without requiring them to sign up or log in ",
     languages: ["React", "context api", "Styled Components"],
-    webLink: "https://www.dev-coach.com/",
+    webLink: "https://git-hub-finda.netlify.app",
     githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
     image: githubfinda,
     altText: "Github finda project screenshot",
@@ -231,7 +231,7 @@ const projects = [
   {
     title: "Unical Portal",
     description:
-      "Unical Portal  is an application that is under development. Unical Portal is an application that's suppose to help students of the University of Calabar pay fees, book accommodation, check results and make school life easier.",
+      "Currently, in development, Unical Portal is an application that will facilitate payments, accommodation booking, results checking, and other school related activities.",
     languages: ["React", "Redux", "Styled Components", "Node js"],
     webLink: "https://www.unical.nugitech.com/",
     githubLink: "https://github.com/nugitech/unical-frontend",
