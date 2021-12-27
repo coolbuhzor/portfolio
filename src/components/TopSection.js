@@ -165,7 +165,7 @@ const TopSection = () => {
           />
         </div>
         <a
-          href="https://drive.google.com/file/d/1-Ra1QOi1SyqlhEP49y8ueqTn19LLY55l/view?usp=sharing"
+          href="https://drive.google.com/file/d/1qnbQOHzKbqywKudPI4GOWyYbTZRuuLYr/view?usp=sharing"
           target="_blank rel=noopener noreferrer"
         >
           <button>Download Resume</button>
