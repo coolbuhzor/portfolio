@@ -23,6 +23,7 @@ const ProjectStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
 
     @media ${devices.tablet} {
       font-size: 2.4rem;
@@ -89,6 +90,10 @@ const ProjectStyled = styled.div`
         margin-left: 0%;
         margin-bottom: 2rem;
       }
+
+      @media ${devices.mobile} {
+        width: 90%;
+      }
     }
 
     .textDiv {
@@ -110,6 +115,9 @@ const ProjectStyled = styled.div`
         width: 90%;
         height: auto;
         padding: 1rem;
+      }
+      @media ${devices.mobile} {
+        width: 80%;
       }
 
       a {
@@ -240,9 +248,9 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ darkMode }) => {
   return (
-    <ProjectStyled id="projects">
+    <ProjectStyled darkMode={darkMode} id="projects">
       <h1>
         <div className="lineStyle"></div>
         Projects I've Built

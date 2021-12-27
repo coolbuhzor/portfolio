@@ -6,9 +6,14 @@ import devices from "../utils/devices";
 const AboutMeStyled = styled.div`
   padding-top: 10rem;
   height: 100vh;
+  display: block;
+  margin: auto;
 
   @media ${devices.large} {
     height: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {
@@ -17,6 +22,7 @@ const AboutMeStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
 
     @media ${devices.mobile} {
       font-size: 2rem;
@@ -77,7 +83,7 @@ const AboutMeStyled = styled.div`
       width: 50%;
       text-align: left;
       font-size: 1.8rem;
-      color: #a0aec0;
+      color: ${(props) => (props.darkMode ? "#a0aec0" : "#080a16")};
 
       @media ${devices.tablet} {
         width: 90%;
@@ -87,9 +93,9 @@ const AboutMeStyled = styled.div`
   }
 `;
 
-const AboutMe = () => {
+const AboutMe = ({ darkMode }) => {
   return (
-    <AboutMeStyled id="about-me">
+    <AboutMeStyled darkMode={darkMode} id="about-me">
       <h1>
         <div className="lineStyle"></div>
         About Me

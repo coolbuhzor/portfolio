@@ -12,7 +12,7 @@ import Zoom from "react-reveal/Zoom";
 import bootstrap from "../img/bootstrapIcon.svg";
 
 const SkillStyled = styled.div`
-  height: 100vh;
+  height: 70vh;
   padding-top: 15rem;
 
   @media ${devices.large} {
@@ -30,6 +30,7 @@ const SkillStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
 
     @media ${devices.mobile} {
       margin-bottom: 5vh;
@@ -78,10 +79,10 @@ const skillsB = [
   { icon: gitIcon, altText: "git icon" },
 ];
 
-const Skills = () => {
+const Skills = ({ darkMode }) => {
   return (
     <Zoom>
-      <SkillStyled id="skills">
+      <SkillStyled darkMode={darkMode} id="skills">
         <h1>
           <div className="lineStyle"></div>
           My Skillsets

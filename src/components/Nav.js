@@ -5,7 +5,7 @@ import devices from "../utils/devices";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavStyled = styled.div`
-  padding-left: 5%;
+  padding-left: 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,6 +49,15 @@ const NavStyled = styled.div`
   .linkDiv {
     display: flex;
     background: #0b0a1d;
+    width: 32%;
+    margin-right: 30px;
+
+    @media ${devices.large} {
+      width: 45%;
+    }
+    @media ${devices.mobile} {
+      width: 35%;
+    }
 
     .divStyle {
       background: #0b0a1d;
@@ -58,8 +67,13 @@ const NavStyled = styled.div`
       margin-left: 5rem;
       background: #0b0a1d;
 
+      @media ${devices.tablet} {
+        margin-right: 2rem;
+        margin-left: 1rem;
+      }
       @media ${devices.mobile} {
         margin-right: 1rem;
+        margin-left: 1rem;
       }
     }
 
@@ -87,8 +101,15 @@ const Logo = styled.div`
   padding: 0.5rem 1rem;
   border-radius: 7px;
 `;
+const Button = styled.button`
+  border: none;
+`;
+function Navigation({ darkMode, setDarkMode }) {
+  const onClick = () => {
+    setDarkMode(!darkMode);
+    console.log("clicked");
+  };
 
-function Navigation() {
   return (
     <NavStyled>
       <div className="logoDiv">
@@ -116,10 +137,19 @@ function Navigation() {
             Projects
           </AnchorLink>
         </div>
-        <div className="navLink">
+        <div className="navLink ">
           <AnchorLink href="#contact-me" className="linkStyle" to="/">
             Contact
           </AnchorLink>
+        </div>
+        <div className="navLink  ">
+          <Button onClick={onClick}>
+            {darkMode ? (
+              <i class="fas fa-sun fa-2x"></i>
+            ) : (
+              <i class="fas fa-moon fa-2x"></i>
+            )}
+          </Button>
         </div>
       </div>
     </NavStyled>

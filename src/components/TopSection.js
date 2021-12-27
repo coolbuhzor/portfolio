@@ -5,15 +5,17 @@ import devices from "../utils/devices";
 
 const TopStyled = styled.div`
   display: flex;
-  padding-top: 22rem;
+  // padding-top: 12rem;
   height: 100vh;
   text-align: left;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
 
   @media ${devices.large} {
+    padding-top: 20rem;
     flex-direction: column;
     align-items: center;
     justify-content: none;
@@ -22,7 +24,7 @@ const TopStyled = styled.div`
 
   @media ${devices.tablet} {
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 20rem;
     align-items: center;
     justify-content: none;
     height: auto;
@@ -30,12 +32,13 @@ const TopStyled = styled.div`
 
   @media ${devices.mobile} {
     padding-top: 5rem;
+    borer: 1px solid red;
   }
   .left-section {
     h1 {
       font-weight: 900;
       font-size: 5rem;
-
+      color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
       @media ${devices.mobile} {
         font-weight: 700;
         font-size: 3rem;
@@ -144,9 +147,9 @@ const TopStyled = styled.div`
   }
 `;
 
-const TopSection = () => {
+const TopSection = ({ darkMode }) => {
   return (
-    <TopStyled id="home">
+    <TopStyled darkMode={darkMode} id="home">
       <div className="left-section">
         <h3 className="hello">Hello, I'm</h3>
         <h1>Okafor Chibuzor Victor</h1>

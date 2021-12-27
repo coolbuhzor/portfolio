@@ -24,6 +24,7 @@ const ContactStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
 
     @media ${devices.mobile} {
       font-size: 2rem;
@@ -44,12 +45,12 @@ const ContactStyled = styled.div`
     width: 50%;
     text-align: center;
     margin-left: 25%;
-    color: #a0aec0;
+    color: ${(props) => (props.darkMode ? "#a0aec0" : "#080a16")};
     font-size: 2rem;
     margin-bottom: 3rem;
 
     @media ${devices.mobile} {
-      width: 100%;
+      width: 90%;
       margin-left: 0%;
       padding: 1rem;
     }
@@ -85,9 +86,9 @@ const ContactStyled = styled.div`
   }
 `;
 
-const ContactMe = () => {
+const ContactMe = ({ darkMode }) => {
   return (
-    <ContactStyled id="contact-me">
+    <ContactStyled darkMode={darkMode} id="contact-me">
       <h1>
         <div className="lineStyle"></div>
         Get In Touch
