@@ -32,7 +32,10 @@ const TopStyled = styled.div`
 
   @media ${devices.mobile} {
     padding-top: 5rem;
-    borer: 1px solid red;
+  }
+
+  @media ${devices.small} {
+    width: 85%;
   }
   .left-section {
     h1 {
@@ -42,6 +45,9 @@ const TopStyled = styled.div`
       @media ${devices.mobile} {
         font-weight: 700;
         font-size: 3rem;
+      }
+      @media ${devices.small} {
+        padding: 10px 0;
       }
     }
     .titleDiv {
@@ -225,7 +231,7 @@ const TopSection = ({ darkMode }) => {
             </svg>
           </a>
           <a
-            href="whatsapp://send?phone=+2348064136593"
+            href="https://twitter.com/coolbuhzor"
             target="_blank rel=noopener noreferrer"
           >
             <svg
