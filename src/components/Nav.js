@@ -103,8 +103,16 @@ const Logo = styled.div`
 `;
 const Button = styled.button`
   border: none;
+  background: #53b2ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  color: ${(props) => (props.darkMode ? "#fff" : "##080a16")};
 `;
-function Navigation({ darkMode, setDarkMode }) {
+const Navigation = ({ darkMode, setDarkMode }) => {
   const onClick = () => {
     setDarkMode(!darkMode);
     console.log("clicked");
@@ -143,7 +151,7 @@ function Navigation({ darkMode, setDarkMode }) {
           </AnchorLink>
         </div>
         <div className="navLink  ">
-          <Button onClick={onClick}>
+          <Button darkMode={darkMode} onClick={onClick}>
             {darkMode ? (
               <i class="fas fa-sun fa-2x"></i>
             ) : (
@@ -154,6 +162,6 @@ function Navigation({ darkMode, setDarkMode }) {
       </div>
     </NavStyled>
   );
-}
+};
 
 export default Navigation;
