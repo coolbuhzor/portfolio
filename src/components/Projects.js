@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import githubfinder from "../img/githubfinda.png";
 import devices from "../utils/devices";
 import credoImg from "../img/credo-img.png";
 import nimdeeImg from "../img/nimdee.png";
@@ -182,6 +181,7 @@ const ProjectStyled = styled.div`
           margin-bottom: 2rem;
         }
         p {
+          width: 90%;
           background: #2d3748;
           color: #a0aec0;
         }
