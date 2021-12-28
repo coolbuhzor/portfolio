@@ -110,7 +110,7 @@ const Button = styled.button`
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 50%;
-  color: ${(props) => (props.darkMode ? "#fff" : "##080a16")};
+  color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
 `;
 const Navigation = ({ darkMode, setDarkMode }) => {
   const onClick = () => {
