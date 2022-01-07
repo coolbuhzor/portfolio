@@ -111,6 +111,10 @@ const Button = styled.button`
   width: 3.5rem;
   border-radius: 50%;
   color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
+
+  i {
+    font-size: 2rem;
+  }
 `;
 const Navigation = ({ darkMode, setDarkMode }) => {
   const onClick = () => {
@@ -153,9 +157,9 @@ const Navigation = ({ darkMode, setDarkMode }) => {
         <div className="navLink  ">
           <Button darkMode={darkMode} onClick={onClick}>
             {darkMode ? (
-              <i class="fas fa-sun fa-2x"></i>
+              <i class="fas fa-sun "></i>
             ) : (
-              <i class="fas fa-moon fa-2x"></i>
+              <i class="fas fa-moon"></i>
             )}
           </Button>
         </div>
