@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import styled from "styled-components";
-// import Animate from "react-simple-animate";
 import Navigation from "./components/Nav";
 import TopSection from "./components/TopSection";
 import AboutMe from "./components/AboutMe";
@@ -12,7 +11,6 @@ import Footer from "./components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  console.log(darkMode, "darkmode");
   return (
     <Portfolio darkMode={darkMode}>
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />

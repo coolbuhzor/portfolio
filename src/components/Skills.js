@@ -1,71 +1,13 @@
 import React from "react";
-import styled from "styled-components";
 import html5Icon from "../img/htmlIcon.svg";
 import css3Icon from "../img/cssIcon.svg";
 import jsIcon from "../img/jsIcon.svg";
 import nodeIcon from "../img/nodejsIcon.svg";
-// import pythonIcon from "../img/pythonIcon.svg";
 import reactIcon from "../img/reactIcon.svg";
 import gitIcon from "../img/gitIcon.svg";
-import devices from "../utils/devices";
 import Zoom from "react-reveal/Zoom";
 import bootstrap from "../img/bootstrapIcon.svg";
-
-const SkillStyled = styled.div`
-  height: 70vh;
-  padding-top: 15rem;
-
-  @media ${devices.large} {
-    padding-top: 8rem;
-    height: 50vh;
-  }
-
-  @media ${devices.mobile} {
-    height: auto;
-  }
-
-  h1 {
-    margin-bottom: 15vh;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ${(props) => (props.darkMode ? "#fff" : "#080a16")};
-
-    @media ${devices.mobile} {
-      margin-bottom: 5vh;
-      font-size: 2rem;
-    }
-
-    .lineStyle {
-      background-color: rgb(45, 57, 82);
-      height: 1px;
-      position: relative;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      width: 20%;
-    }
-  }
-
-  .firstSet,
-  .secondSet {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 4rem;
-  }
-
-  .iconDiv {
-    img {
-      width: 10rem;
-      height: 10rem;
-
-      @media ${devices.mobile} {
-        width: 5rem;
-        height: 5rem;
-      }
-    }
-  }
-`;
+import { SkillStyled } from "./Styled";
 
 const skillsA = [
   { icon: html5Icon, altText: "html5 icon" },
