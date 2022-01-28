@@ -90,6 +90,8 @@ const Footer = () => {
           <span>IconFinder</span>
         </a>
       </p>
+
+      <p>© 2022 - Okafor Chibuzor</p>
     </FooterStyled>
   );
 };
