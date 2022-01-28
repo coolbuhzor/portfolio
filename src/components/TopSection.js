@@ -231,7 +231,7 @@ const TopSection = ({ darkMode }) => {
             </svg>
           </a>
           <a
-            href="https://twitter.com/coolbuhzor"
+            href="whatsapp://send?phone=+2348064136593"
             target="_blank rel=noopener noreferrer"
           >
             <svg

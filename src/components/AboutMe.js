@@ -5,7 +5,7 @@ import devices from "../utils/devices";
 
 const AboutMeStyled = styled.div`
   padding-top: 10rem;
-  height: 100vh;
+  height: 75vh;
   display: block;
   margin: auto;
 
