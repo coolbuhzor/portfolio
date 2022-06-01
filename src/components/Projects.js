@@ -15,18 +15,18 @@ const projects = [
     altText: "Credo project screenshot",
     ownership: "Credo",
   },
-  {
-    title: "Nimdee",
-    description:
-      "Nimdee is a learning platform that provides parents and teachers with resources and materials to teach kids in a fun and engaging way",
-    languages: ["React", "Redux", "PHP"],
-    webLink: "https://nimdee.com/",
-    githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
-    image:
-      "https://drive.google.com/uc?export=view&id=18lvN85eiGoIRM8UDIP84nSBaZeBfBTG7",
-    altText: "Nimdee project screenshot",
-    ownership: "Nimdee Learning Games",
-  },
+  // {
+  //   title: "Nimdee",
+  //   description:
+  //     "Nimdee is a learning platform that provides parents and teachers with resources and materials to teach kids in a fun and engaging way",
+  //   languages: ["React", "Redux", "PHP"],
+  //   webLink: "https://nimdee.com/",
+  //   githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
+  //   image:
+  //     "https://drive.google.com/uc?export=view&id=18lvN85eiGoIRM8UDIP84nSBaZeBfBTG7",
+  //   altText: "Nimdee project screenshot",
+  //   ownership: "Nimdee Learning Games",
+  // },
   {
     title: "Github Finder",
     description:
@@ -39,18 +39,18 @@ const projects = [
     altText: "Github finda project screenshot",
     ownership: "Personal Project",
   },
-  {
-    title: "Unical Portal",
-    description:
-      "Currently, in development, Unical Portal is an application that will facilitate payments, accommodation booking, results checking, and other school related activities.",
-    languages: ["React", "Redux", "Styled Components", "Node js"],
-    webLink: "https://www.unical.nugitech.com/",
-    githubLink: "https://github.com/nugitech/unical-frontend",
-    image:
-      "https://drive.google.com/uc?export=view&id=1aYKK4WQVq5s1PNU1seRpE88bEhVmfU0G",
-    altText: "Unical project screenshot",
-    ownership: "Nugi Technologies",
-  },
+  // {
+  //   title: "Unical Portal",
+  //   description:
+  //     "Currently, in development, Unical Portal is an application that will facilitate payments, accommodation booking, results checking, and other school related activities.",
+  //   languages: ["React", "Redux", "Styled Components", "Node js"],
+  //   webLink: "https://www.unical.nugitech.com/",
+  //   githubLink: "https://github.com/nugitech/unical-frontend",
+  //   image:
+  //     "https://drive.google.com/uc?export=view&id=1aYKK4WQVq5s1PNU1seRpE88bEhVmfU0G",
+  //   altText: "Unical project screenshot",
+  //   ownership: "Nugi Technologies",
+  // },
 ];
 
 const Projects = ({ darkMode }) => {
