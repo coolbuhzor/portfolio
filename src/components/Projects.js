@@ -1,6 +1,9 @@
 import React from "react";
 import { GithubIcon, LinkIcon } from "./Icon";
 import { ProjectStyled } from "./Styled";
+import gitHubImg from "../img/github-finder.png";
+import naicom from "../img/naicom.webp";
+import credo from "../img/credo.png";
 
 const projects = [
   {
@@ -10,23 +13,33 @@ const projects = [
     languages: ["React", "Redux", "Node", "Styled Components", "Bootstrap"],
     webLink: "https://credo.nugitech.com/",
     githubLink: "https://github.com/nugitech/credo-frontend",
-    image:
-      "https://drive.google.com/uc?export=view&id=1Val-_KCk6ESiNGwdCdmux9gtep3e203s",
+    image: credo,
     altText: "Credo project screenshot",
     ownership: "Credo",
   },
   // {
-  //   title: "Nimdee",
+  //   title: "TAILORGANG BUSINESS",
   //   description:
-  //     "Nimdee is a learning platform that provides parents and teachers with resources and materials to teach kids in a fun and engaging way",
-  //   languages: ["React", "Redux", "PHP"],
-  //   webLink: "https://nimdee.com/",
+  //     "Tailorgang Business is a project built by a team of developers at Nugi Technologies Nigeria Ltd. It is a business management system for fashion businesses tailored to help you manage your customers, invoices, and resources all in one place.",
+  //   languages: ["React", "Redux", "Node", "Bootstrap"],
+  //   webLink: "https://biz.tailorgang.io/",
   //   githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
   //   image:
   //     "https://drive.google.com/uc?export=view&id=18lvN85eiGoIRM8UDIP84nSBaZeBfBTG7",
-  //   altText: "Nimdee project screenshot",
-  //   ownership: "Nimdee Learning Games",
+  //   altText: "Tailor gang project screenshot",
+  //   ownership: "NUGI TECHNOLOGIES",
   // },
+  {
+    title: "NAICOM",
+    description:
+      "NAICOM web app ia a complaint management System built for NAICOM to effectively track & manage insurance complaints and issues.",
+    languages: ["Next.js", "Redux Toolkit", "Styled Components", "Node js"],
+    webLink: "https://naicom.nugitech.com/",
+    // githubLink: "https://github.com/nugitech/unical-frontend",
+    image: naicom,
+    altText: "Naicom project screenshot",
+    ownership: "Nugi Technologies",
+  },
   {
     title: "Github Finder",
     description:
@@ -34,23 +47,10 @@ const projects = [
     languages: ["React", "context api", "Styled Components"],
     webLink: "https://git-hub-finda.netlify.app",
     githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
-    image:
-      "https://drive.google.com/uc?export=view&id=1mdRP5iZaLoCAolxAWh6aTFA7sftEJtlc",
+    image: gitHubImg,
     altText: "Github finda project screenshot",
     ownership: "Personal Project",
   },
-  // {
-  //   title: "Unical Portal",
-  //   description:
-  //     "Currently, in development, Unical Portal is an application that will facilitate payments, accommodation booking, results checking, and other school related activities.",
-  //   languages: ["React", "Redux", "Styled Components", "Node js"],
-  //   webLink: "https://www.unical.nugitech.com/",
-  //   githubLink: "https://github.com/nugitech/unical-frontend",
-  //   image:
-  //     "https://drive.google.com/uc?export=view&id=1aYKK4WQVq5s1PNU1seRpE88bEhVmfU0G",
-  //   altText: "Unical project screenshot",
-  //   ownership: "Nugi Technologies",
-  // },
 ];
 
 const Projects = ({ darkMode }) => {

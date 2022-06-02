@@ -29,8 +29,9 @@ const TopSection = ({ darkMode }) => {
             ]}
           />
         </div>
+        {/* https://drive.google.com/file/d/1uh6AZ6R29yvHUiPrgeN98rAXugIUTHyn/view?usp=sharing */}
         <a
-          href="https://drive.google.com/file/d/1qnbQOHzKbqywKudPI4GOWyYbTZRuuLYr/view?usp=sharing"
+          href="//drive.google.com/file/d/1uh6AZ6R29yvHUiPrgeN98rAXugIUTHyn/view?usp=sharing"
           target="_blank rel=noopener noreferrer"
         >
           <button>Download Resume</button>

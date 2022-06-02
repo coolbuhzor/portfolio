@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutMeStyled } from "./Styled";
+import buhzor from "../img/buhzor.webp";
 
 const AboutMe = ({ darkMode }) => {
   return (
@@ -12,10 +13,7 @@ const AboutMe = ({ darkMode }) => {
       <div className="aboutMeContainer">
         <div className="imgDiv">
           <div className="imageWrapper">
-            <img
-              src={`https://drive.google.com/uc?export=view&id=1TfCd338Ar0sc5S8reJHpZEg65iovUJwU`}
-              alt="my profile"
-            />
+            <img src={buhzor} alt="my profile" />
           </div>
         </div>
         <p>
