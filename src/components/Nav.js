@@ -36,7 +36,11 @@ const Navigation = ({ darkMode, setDarkMode }) => {
           </AnchorLink>
         </div>
         <div className="navLink  ">
-          <Button darkMode={darkMode} onClick={onClick}>
+          <Button
+            aria-label="switch-theme"
+            darkMode={darkMode}
+            onClick={onClick}
+          >
             {darkMode ? (
               <i class="fas fa-sun "></i>
             ) : (
