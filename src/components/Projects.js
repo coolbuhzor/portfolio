@@ -1,9 +1,11 @@
 import React from "react";
 import { GithubIcon, LinkIcon } from "./Icon";
 import { ProjectStyled } from "./Styled";
-import gitHubImg from "../img/github-finder.png";
+import gitHubImg from "../img/github-finder.webp";
 import naicom from "../img/naicom.webp";
-import credo from "../img/credo.png";
+import credo from "../img/credo.webp";
+import flipeet from "../img/flipeet.webp";
+import ilaundry from "../img/ilaundry.webp";
 
 const projects = [
   {
@@ -12,33 +14,43 @@ const projects = [
       "Currently, in development, Credo is a fintech application that helps businesses run as smoothly as possible. Credo helps process payments, sell products, and post directly on social media accounts.",
     languages: ["React", "Redux", "Node", "Styled Components", "Bootstrap"],
     webLink: "https://credo.nugitech.com/",
-    githubLink: "https://github.com/nugitech/credo-frontend",
+    githubLink: "#",
     image: credo,
     altText: "Credo project screenshot",
     ownership: "Credo",
   },
-  // {
-  //   title: "TAILORGANG BUSINESS",
-  //   description:
-  //     "Tailorgang Business is a project built by a team of developers at Nugi Technologies Nigeria Ltd. It is a business management system for fashion businesses tailored to help you manage your customers, invoices, and resources all in one place.",
-  //   languages: ["React", "Redux", "Node", "Bootstrap"],
-  //   webLink: "https://biz.tailorgang.io/",
-  //   githubLink: "https://github.com/9ijakidArchitect/NimdeeReact.git",
-  //   image:
-  //     "https://drive.google.com/uc?export=view&id=18lvN85eiGoIRM8UDIP84nSBaZeBfBTG7",
-  //   altText: "Tailor gang project screenshot",
-  //   ownership: "NUGI TECHNOLOGIES",
-  // },
   {
     title: "NAICOM",
     description:
       "NAICOM web app ia a complaint management System built for NAICOM to effectively track & manage insurance complaints and issues.",
     languages: ["Next.js", "Redux Toolkit", "Styled Components", "Node js"],
     webLink: "https://naicom.nugitech.com/",
-    // githubLink: "https://github.com/nugitech/unical-frontend",
+    githubLink: "#",
     image: naicom,
     altText: "Naicom project screenshot",
     ownership: "Nugi Technologies",
+  },
+  {
+    title: "FLIPEET ",
+    description:
+      "Flipeet is an NFT Market place that is still in production. Flipeet allows users to connect their crypto wallet and trade Nfts. Flipeet is Designed to make NFT to NFT trading possible, and get you to call the shots on what you value",
+    languages: ["React", "Redux"],
+    webLink: "https://flipeet.io/",
+    githubLink: "#",
+    image: flipeet,
+    altText: "FLipeet Landing page Image",
+    ownership: "NUGI TECHNOLOGIES",
+  },
+  {
+    title: "Ilaundry ",
+    description:
+      "Ilaundry is a web app still in production. Ilaundry  is used to track laundry services and their customers. Ilaundry is designed to make laundry services more efficient and easy to use.",
+    languages: ["React", "Redux"],
+    webLink: "https://ilaundry-web-app.netlify.app/",
+    githubLink: "#",
+    image: ilaundry,
+    altText: "Ilaundry Landing page Image",
+    ownership: "NUGI TECHNOLOGIES",
   },
   {
     title: "Github Finder",

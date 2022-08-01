@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom'
+import React, { lazy, Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+// import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLoader } from "react-spinners";
 
+const App = lazy(() => import("./App"));
 ReactDOM.render(
-  <Router>
-    <React.StrictMode>
+  <Suspense
+    fallback={
+      <div className="sweet-loading">
+        <HashLoader size={100} color={"#53B2AC"} />
+      </div>
+    }
+  >
+    <Router>
+      {/* <React.StrictMode> */}
       <App />
-    </React.StrictMode>
-  </Router>,
-  document.getElementById('root')
+      {/* </React.StrictMode> */}
+    </Router>
+  </Suspense>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

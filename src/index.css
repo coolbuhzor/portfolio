@@ -193,3 +193,14 @@ a {
 label {
   font-size: 1.6rem;
 }
+
+.sweet-loading {
+  height: 100vh;
+  width: 100vw;
+  background: #080a16;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: "2rem";
+}
