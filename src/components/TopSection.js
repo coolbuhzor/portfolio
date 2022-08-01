@@ -29,11 +29,9 @@ const TopSection = ({ darkMode }) => {
             ]}
           />
         </div>
-        {/* https://drive.google.com/file/d/1uh6AZ6R29yvHUiPrgeN98rAXugIUTHyn/view?usp=sharing */}
-        {/* https://drive.google.com/file/d/1kjAJ0ptUC0EY05zvqU9awyst9oQP5Jm-/view?usp=sharing */}
+
         <a
           href="//drive.google.com/file/d/1kjAJ0ptUC0EY05zvqU9awyst9oQP5Jm-/view?usp=sharing"
-          // href="//drive.google.com/file/d/1uh6AZ6R29yvHUiPrgeN98rAXugIUTHyn/view?usp=sharing"
           target="_blank rel=noopener noreferrer"
         >
           <button>Download Resume</button>
