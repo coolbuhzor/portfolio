@@ -3,7 +3,7 @@ import { GithubIcon, LinkIcon } from "./Icon";
 import { ProjectStyled } from "./Styled";
 import gitHubImg from "../img/github-finder.webp";
 import naicom from "../img/naicom.webp";
-import credo from "../img/credo.web";
+import credo from "../img/credo.webp";
 import flipeet from "../img/flipeet.webp";
 import ilaundry from "../img/ilaundry.webp";
 

@@ -24,7 +24,12 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <ErrorContainer>Loading failed! Please reload.</ErrorContainer>;
+      return (
+        <ErrorContainer>
+          Loading failed! <br /> Something Went Wrong. <br /> Please Contact
+          coolbuhzor@gmail.com
+        </ErrorContainer>
+      );
     }
 
     return this.props.children;
