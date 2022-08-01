@@ -10,15 +10,15 @@ import bootstrap from "../img/bootstrapIcon.svg";
 import { SkillStyled } from "./Styled";
 
 const skillsA = [
-  { icon: html5Icon, altText: "html5 icon" },
-  { icon: css3Icon, altText: "css3 icon" },
-  { icon: jsIcon, altText: "javascript icon" },
-  { icon: reactIcon, altText: "react icon" },
+  { icon: html5Icon, altText: "html5 icon", id: 1 },
+  { icon: css3Icon, altText: "css3 icon", id: 2 },
+  { icon: jsIcon, altText: "javascript icon", id: 3 },
+  { icon: reactIcon, altText: "react icon", id: 4 },
 ];
 const skillsB = [
-  { icon: nodeIcon, altText: "node icon" },
-  { icon: bootstrap, altText: "Bootstrap icon" },
-  { icon: gitIcon, altText: "git icon" },
+  { icon: nodeIcon, altText: "node icon", id: 1 },
+  { icon: bootstrap, altText: "Bootstrap icon", id: 2 },
+  { icon: gitIcon, altText: "git icon", id: 3 },
 ];
 
 const Skills = ({ darkMode }) => {
@@ -31,16 +31,16 @@ const Skills = ({ darkMode }) => {
           <div className="lineStyle"></div>
         </h1>
         <div className="firstSet">
-          {skillsA.map(({ icon, altText }) => (
-            <div className="iconDiv">
-              <img src={icon} alt={altText} />
+          {skillsA.map((item) => (
+            <div className="iconDiv" key={item.id}>
+              <img src={item.icon} alt={item.altText} />
             </div>
           ))}
         </div>
         <div className="secondSet">
-          {skillsB.map(({ icon, altText }) => (
-            <div className="iconDiv">
-              <img src={icon} alt={altText} />
+          {skillsB.map((item) => (
+            <div className="iconDiv" key={item.id}>
+              <img src={item.icon} alt={item.altText} />
             </div>
           ))}
         </div>

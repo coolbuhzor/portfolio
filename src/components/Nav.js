@@ -42,9 +42,9 @@ const Navigation = ({ darkMode, setDarkMode }) => {
             onClick={onClick}
           >
             {darkMode ? (
-              <i class="fas fa-sun "></i>
+              <i className="fas fa-sun "></i>
             ) : (
-              <i class="fas fa-moon"></i>
+              <i className="fas fa-moon"></i>
             )}
           </Button>
         </div>

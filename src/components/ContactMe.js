@@ -47,13 +47,12 @@ const ContactMe = ({ darkMode }) => {
           rel="noopener noreferrer"
         >
           <TwitterIcon />
-
-          <a
-            href="whatsapp://send?phone=+2348064136593"
-            target="_blank rel=noopener noreferrer"
-          >
-            <WhatsappIcon />
-          </a>
+        </a>
+        <a
+          href="whatsapp://send?phone=+2348064136593"
+          target="_blank rel=noopener noreferrer"
+        >
+          <WhatsappIcon />
         </a>
       </div>
     </ContactStyled>

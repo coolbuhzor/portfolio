@@ -18,6 +18,7 @@ const projects = [
     image: credo,
     altText: "Credo project screenshot",
     ownership: "Credo",
+    id: 1,
   },
   {
     title: "NAICOM",
@@ -29,6 +30,7 @@ const projects = [
     image: naicom,
     altText: "Naicom project screenshot",
     ownership: "Nugi Technologies",
+    id: 2,
   },
   {
     title: "FLIPEET ",
@@ -40,6 +42,7 @@ const projects = [
     image: flipeet,
     altText: "FLipeet Landing page Image",
     ownership: "NUGI TECHNOLOGIES",
+    id: 3,
   },
   {
     title: "Ilaundry ",
@@ -51,6 +54,7 @@ const projects = [
     image: ilaundry,
     altText: "Ilaundry Landing page Image",
     ownership: "NUGI TECHNOLOGIES",
+    id: 4,
   },
   {
     title: "Github Finder",
@@ -62,6 +66,7 @@ const projects = [
     image: gitHubImg,
     altText: "Github finda project screenshot",
     ownership: "Personal Project",
+    id: 5,
   },
 ];
 
@@ -84,8 +89,9 @@ const Projects = ({ darkMode }) => {
             image,
             altText,
             ownership,
+            id,
           }) => (
-            <div className="projectContainer">
+            <div className="projectContainer" key={id}>
               <div className="textDiv">
                 <h4>Featured Project</h4>
                 <a href={webLink} target="_blank" rel="noopener noreferrer">
@@ -96,7 +102,7 @@ const Projects = ({ darkMode }) => {
                 </div>
                 <div className="techDiv">
                   {languages.map((items) => (
-                    <h4>{items}</h4>
+                    <h4 key={items}> {items}</h4>
                   ))}
                 </div>
                 <div>
