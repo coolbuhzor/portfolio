@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
 const App = lazy(() => import("./App"));
+const ErrorBoundary = lazy(() => import("./components/Errorboundary"));
 ReactDOM.render(
   <Suspense
     fallback={
@@ -15,12 +16,15 @@ ReactDOM.render(
       </div>
     }
   >
-    <Router>
-      {/* <React.StrictMode> */}
-      <App />
-      {/* </React.StrictMode> */}
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        {/* <React.StrictMode> */}
+        <App />
+        {/* </React.StrictMode> */}
+      </Router>
+    </ErrorBoundary>
   </Suspense>,
+
   document.getElementById("root")
 );
 
