@@ -43,7 +43,7 @@ const projects = [
     description:
       "Flipeet Raise is an innovative web application designed to simplify and amplify the fundraising process. Flipeet Raise enables individuals and organizations to create and manage fundraising campaigns with ease. Users can share their stories, set fundraising goals, and connect with potential donors through a user-friendly interface. The platform supports secure transactions and provides tools for campaign promotion and progress tracking. Flipeet Raise is dedicated to helping people bring their projects, causes, and dreams to life through the power of community support.",
     languages: ["React", "Redux"],
-    webLink: "https://flipeet.io/",
+    webLink: "https://raise.flipeet.io/",
     githubLink: "#",
     image: flipeet,
     altText: "FLipeet Landing page Image",
