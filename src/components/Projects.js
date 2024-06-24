@@ -3,17 +3,21 @@ import { GithubIcon, LinkIcon } from "./Icon";
 import { ProjectStyled } from "./Styled";
 import gitHubImg from "../img/github-finder.webp";
 import naicom from "../img/naicom.webp";
-import credo from "../img/credo.webp";
-import flipeet from "../img/flipeet.webp";
-import ilaundry from "../img/ilaundry.webp";
+import credo from "../img/credo.png";
+import flipeet from "../img/flipeet-raise.png";
+import faveremit from "../img/fave-remit.png";
+import smartCard from "../img/smart-card.png";
+
+// import ilaundry from "../img/ilaundry.webp";
 
 const projects = [
   {
     title: "Credo",
+    subHeading: "Streamlining Your Business Operations",
     description:
-      "Currently, in development, Credo is a fintech application that helps businesses run as smoothly as possible. Credo helps process payments, sell products, and post directly on social media accounts.",
+      "Credo is a fintech application designed to help businesses run as smoothly as possible. It facilitates seamless payment processing, efficient product sales, and hassle-free settlements, ensuring your business operations are smooth and effortless. With Credo, managing your finances and transactions has never been easier.",
     languages: ["React", "Redux", "Node", "Styled Components", "Bootstrap"],
-    webLink: "https://credo.nugitech.com/",
+    webLink: "https://www.credocentral.com/",
     githubLink: "#",
     image: credo,
     altText: "Credo project screenshot",
@@ -21,52 +25,43 @@ const projects = [
     id: 1,
   },
   {
-    title: "NAICOM",
+    title: "My smart card",
+    subHeading: "More Than Just a Smart Business Card",
     description:
-      "NAICOM web app ia a complaint management System built for NAICOM to effectively track & manage insurance complaints and issues.",
-    languages: ["Next.js", "Redux Toolkit", "Styled Components", "Node js"],
-    webLink: "https://naicom.nugitech.com/",
+      "My Smart Card revolutionizes the way you manage and share your contact information. This smart business card seamlessly transmits your contact details, social media profiles, and business information to any smartphone in seconds. Designed for efficiency and connectivity, My Smart Card helps you make lasting impressions and build professional relationships effortlessly. Whether you're networking at an event or meeting a potential client, My Smart Card ensures that your information is always at your fingertips, ready to be shared with a simple tap.",
+    languages: ["React", "Redux Tool Kit", "Node", "tailwind css"],
+    webLink: "https://mysmartcard.co/",
     githubLink: "#",
-    image: naicom,
-    altText: "Naicom project screenshot",
-    ownership: "Nugi Technologies",
+    image: smartCard,
+    altText: "mySmartCard project screenshot",
+    ownership: "MY Smart Card",
     id: 2,
   },
   {
-    title: "FLIPEET ",
+    title: "Flipeet Raise",
+    subHeading: "A Platform for Empowering Fundraising Campaigns",
     description:
-      "Flipeet is an NFT Market place that is still in production. Flipeet allows users to connect their crypto wallet and trade Nfts. Flipeet is Designed to make NFT to NFT trading possible, and get you to call the shots on what you value",
+      "Flipeet Raise is an innovative web application designed to simplify and amplify the fundraising process. Flipeet Raise enables individuals and organizations to create and manage fundraising campaigns with ease. Users can share their stories, set fundraising goals, and connect with potential donors through a user-friendly interface. The platform supports secure transactions and provides tools for campaign promotion and progress tracking. Flipeet Raise is dedicated to helping people bring their projects, causes, and dreams to life through the power of community support.",
     languages: ["React", "Redux"],
     webLink: "https://flipeet.io/",
     githubLink: "#",
     image: flipeet,
     altText: "FLipeet Landing page Image",
-    ownership: "NUGI TECHNOLOGIES",
+    ownership: "Flipeet",
     id: 3,
   },
   {
-    title: "Ilaundry ",
+    title: "Faveremit ",
+    subHeading: "Fast and Reliable Gift Card Trading",
     description:
-      "Ilaundry is a web app still in production. Ilaundry  is used to track laundry services and their customers. Ilaundry is designed to make laundry services more efficient and easy to use.",
-    languages: ["React", "Redux"],
-    webLink: "https://ilaundry-web-app.netlify.app/",
+      "Faveremit is a web app designed for the swift and dependable buying and selling of unused gift cards for cash at competitive rates. Experience seamless transactions and get the best value for your gift cards effortlessly. With Faveremit, you can turn your unused gift cards into cash quickly and securely or purchase gift cards at attractive prices.",
+    languages: ["React", "Redux tool kit", "tailwind css"],
+    webLink: "https://faveremitwebportal.vercel.app/",
     githubLink: "#",
-    image: ilaundry,
+    image: faveremit,
     altText: "Ilaundry Landing page Image",
-    ownership: "NUGI TECHNOLOGIES",
+    ownership: "Faveremit",
     id: 4,
-  },
-  {
-    title: "Github Finder",
-    description:
-      "GitHub Finder is an application that allows you to search for Github users, their details, and their contributions without requiring them to sign up or log in ",
-    languages: ["React", "context api", "Styled Components"],
-    webLink: "https://git-hub-finda.netlify.app",
-    githubLink: "https://github.com/LABS-EU3/quality_hub_frontend/",
-    image: gitHubImg,
-    altText: "Github finda project screenshot",
-    ownership: "Personal Project",
-    id: 5,
   },
 ];
 
@@ -90,13 +85,26 @@ const Projects = ({ darkMode }) => {
             altText,
             ownership,
             id,
+            subHeading,
           }) => (
             <div className="projectContainer" key={id}>
               <div className="textDiv">
                 <h4>Featured Project</h4>
-                <a href={webLink} target="_blank" rel="noopener noreferrer">
-                  <h3>{title}</h3>
-                </a>
+                <div>
+                  <a href={webLink} target="_blank" rel="noopener noreferrer">
+                    <h3>{title}</h3>
+                  </a>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: "light",
+                      color: "#ccc",
+                    }}
+                  >
+                    {subHeading}
+                  </p>
+                </div>
+
                 <div className="descriptionDiv">
                   <p>{description}</p>
                 </div>

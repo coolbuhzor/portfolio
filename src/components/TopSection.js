@@ -31,7 +31,7 @@ const TopSection = ({ darkMode }) => {
         </div>
 
         <a
-          href="//drive.google.com/file/d/1kjAJ0ptUC0EY05zvqU9awyst9oQP5Jm-/view?usp=sharing"
+          href="//drive.google.com/file/d/15c2YVC5PzTFQ4qKl32ovC7cJWhNyiFPn/view?usp=sharing"
           target="_blank rel=noopener noreferrer"
         >
           <button>Download Resume</button>
