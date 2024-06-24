@@ -1,2 +1,2 @@
 [build]
-  node_version = "16.x"  # Choose a compatible version
+  node_version = "14.x"  # Choose a compatible version
