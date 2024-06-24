@@ -91,7 +91,7 @@ const Footer = () => {
         </a>
       </p>
 
-      <p>© 2022 - Okafor Chibuzor</p>
+      <p>© 2024 - Okafor Chibuzor</p>
     </FooterStyled>
   );
 };
