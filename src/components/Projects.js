@@ -70,7 +70,7 @@ const Projects = ({ darkMode }) => {
     <ProjectStyled darkMode={darkMode} id="projects">
       <h1>
         <div className="lineStyle"></div>
-        Projects I've Built
+        Projects I've Worked On
         <div className="lineStyle"></div>
       </h1>
       <>
