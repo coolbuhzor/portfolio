@@ -20,11 +20,11 @@ const TopSection = ({ darkMode }) => {
             loop={1}
             wrapper="h3"
             steps={[
-              "A creative Front End Web Developer",
+              "A creative Software Engineer",
               1000,
-              "A passionate Front End Web Developer",
+              "A passionate Software Engineer",
               1000,
-              "A creative and passionate Front End Web Developer",
+              "A creative and passionate Software Engineer",
               1000,
             ]}
           />

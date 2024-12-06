@@ -29,12 +29,12 @@ const projects = [
     subHeading: "More Than Just a Smart Business Card",
     description:
       "My Smart Card revolutionizes the way you manage and share your contact information. This smart business card seamlessly transmits your contact details, social media profiles, and business information to any smartphone in seconds. Designed for efficiency and connectivity, My Smart Card helps you make lasting impressions and build professional relationships effortlessly. Whether you're networking at an event or meeting a potential client, My Smart Card ensures that your information is always at your fingertips, ready to be shared with a simple tap.",
-    languages: ["React", "Redux Tool Kit", "Node", "tailwind css"],
+    languages: ["React", "Redux Tool Kit", "Node", "tailwind css", "php"],
     webLink: "https://mysmartcard.co/",
     githubLink: "#",
     image: smartCard,
     altText: "mySmartCard project screenshot",
-    ownership: "MY Smart Card",
+    ownership: "mysmartcard",
     id: 2,
   },
   {
